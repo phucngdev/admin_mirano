@@ -1,0 +1,44 @@
+.table-course-class {
+  .header-table-course-class {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    .span-title {
+      color: rgba(16, 24, 40, 1);
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+}
+
+.table-student-class {
+  // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  // margin: 4px;
+
+  .header-table-student-class {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    .span-title {
+      color: rgba(16, 24, 40, 1);
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  .span-table {
+    color: rgba(16, 24, 40, 1);
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .span-table:hover {
+    color: #1890ff;
+  }
+}

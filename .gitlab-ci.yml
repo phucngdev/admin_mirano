@@ -1,0 +1,100 @@
+# These variables can be overridden via secret variable.
+variables:
+  NODE_VERSION: '18.12.0'
+  GITLAB_CI_REACT_WEB_DOCKER_IMAGE_BUILD: 'node:$NODE_VERSION'
+  PNPM_CACHE_FOLDER: '.pnpm-store'
+  S3_BUCKET: $CI_PROJECT_NAME-$CI_COMMIT_REF_NAME.$WEB_DOMAIN
+
+stages:
+  - build
+  - deploy
+
+# This folder is cached between builds
+# http://docs.gitlab.com/ce/ci/yaml/README.html#cache
+.cache_ci_scripts: &cache_ci_scripts
+  key: '$CI_PROJECT_NAME-$CI_COMMIT_REF_NAME'
+  paths:
+    - $CI_PROJECT_BUILD_DIR/ci_scripts/
+  policy: pull-push
+
+.cache_pnpm: &cache_pnpm
+  key:
+    files:
+      - pnpm-lock.yaml
+  paths:
+    - $PNPM_CACHE_FOLDER
+    - $CI_PROJECT_BUILD_DIR/node_modules/
+  policy: pull-push
+
+# Utilize web identity federation to allow AWS to perform STS calls on our behalf
+.assume_role: &assume_role
+  - export AWS_ACCESS_KEY_ID="${AWS_ACCESS_KEY_ID}"
+  - export AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY}"
+  - export AWS_DEFAULT_REGION="${AWS_DEFAULT_REGION}"
+
+.build_script:
+  image: $GITLAB_CI_REACT_WEB_DOCKER_IMAGE_BUILD
+  stage: build
+  tags:
+    - docker
+  retry: 2
+  cache:
+    - <<: *cache_ci_scripts
+      policy: pull
+    - <<: *cache_pnpm
+      policy: pull
+  before_script:
+    - corepack enable
+    - corepack prepare pnpm@latest-8 --activate
+    - pnpm config set store-dir .pnpm-store
+  script:
+    - |
+      echo "Loading environment variables from DOCKER_DOTENV_FILE"
+      dotenvvar=$(echo "$DOCKER_DOTENV_FILE" | tr ' ' '\n')
+      echo "$dotenvvar" > .env
+      echo "Installing dependencies..."
+      pnpm install
+      echo "Building..."
+      pnpm build
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - build/
+
+.deploy_script:
+  image: registry.gitlab.com/gitlab-org/cloud-deploy/aws-base:latest
+  stage: deploy
+  tags:
+    - docker
+  retry: 2
+  before_script:
+    - *assume_role
+  script:
+    - aws s3 sync build/ s3://$S3_BUCKET --delete
+
+build_staging:
+  extends: .build_script
+  environment: staging
+  only:
+    - staging
+
+deploy_staging:
+  extends: .deploy_script
+  environment: staging
+  only:
+    - staging
+
+
+build_release:
+  extends: .build_script
+  environment: release
+  only:
+    - release
+
+deploy_release:
+  extends: .deploy_script
+  variables:
+    S3_BUCKET: $S3_BUCKET_NAME
+  environment: release
+  only:
+    - release

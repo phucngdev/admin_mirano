@@ -1,0 +1,36 @@
+.account-page {
+  .header-account-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .span-title {
+      color: rgba(16, 24, 40, 1);
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .group-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  .table-account {
+    margin-top: 24px;
+
+    .span-table {
+      color: rgba(16, 24, 40, 1);
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .span-table:hover {
+      color: #1890ff;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.modal-preview {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 360px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 6px;
+
+  .sorting,
+  .fill-in-blank,
+  .multiple-choice-horizontal,
+  .multiple-choice {
+    .preview-html * {
+      font-size: 8px !important;
+    }
+  }
+
+  .multiple-choice,
+  .fill-in-blank {
+    .item-cols {
+      border-radius: 16px;
+      box-shadow: 0px 2px 0px 0px #b5b5b5;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 8px;
+    }
+  }
+}
+
+.modal-preview-group {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 360px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+
+  .questions {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      display: none; // Chrome, Safari
+    }
+  }
+}

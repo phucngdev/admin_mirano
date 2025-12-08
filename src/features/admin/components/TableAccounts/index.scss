@@ -1,0 +1,90 @@
+$color-active: rgba(147, 47, 8, 1);
+$color-default: #666; 
+
+.table-Accounts {
+    .filter-accounts {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        .buttonFilter {
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+
+            .unselected-text {
+                color: rgba(102, 112, 133, 1);
+            }
+
+            .unselected-text1 {
+                font-size: 12px;
+                padding: 0px 8px;
+                background-color: rgba(242, 244, 247, 1);
+                border-radius: 16px;
+                color: rgba(52, 64, 84, 1);
+            }
+
+            .selected-text{
+                font-size: 14px;
+                color: rgba(147, 47, 8, 1) ;
+            }
+
+            .selected-text1 {
+                font-size: 12px;
+                padding: 0px 8px;
+                background-color: rgb(233, 207, 196);
+                border-radius: 16px;
+                color: rgba(147, 47, 8, 1);
+            }
+          
+            &.active {
+            background-color: rgba(255, 241, 235, 1);
+            }
+        }
+    }
+
+    .filterAndSearch {
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .filter {
+            width: 102px;
+            border-radius: 8px;
+            padding: 10px 16px;
+            border: 1px solid rgba(208, 213, 221, 1);
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .SearchAcc {
+            .no-outline {
+                padding: 10px 14px;
+                border-radius: 8px;   
+
+                &:focus-within {
+                    outline: none !important;
+                    box-shadow: none !important;
+                    border-color: #d9d9d9 !important;
+                  }
+                
+                  &:hover {
+                    border-color: #d9d9d9 !important;
+                  }
+                
+                  .ant-input-prefix {
+                    margin-inline-end: 10px;
+                  }
+            }
+        }
+    }
+
+    .table-acc {
+        .page-nation {
+            ul {
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+    }
+}

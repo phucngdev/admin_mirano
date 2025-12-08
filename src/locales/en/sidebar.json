@@ -1,0 +1,11 @@
+{
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "department": "Department",
+    "employee": "Employee",
+    "report": "Report",
+    "code": "Code",
+    "invoice": "Invoice",
+    "setting": "Setting"
+  }
+}

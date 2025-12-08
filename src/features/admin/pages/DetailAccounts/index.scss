@@ -1,0 +1,39 @@
+.Container-t-detailAcc {
+  .listAccountsIpfileAndCreatAcc {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .listAccounts-t {
+      display: flex;
+      flex-direction: column;
+      span {
+        color: rgba(16, 24, 40, 1);
+        font-size: 30px;
+        font-weight: 500;
+        &:last-child {
+          padding: 2px 10px;
+          background-color: rgba(236, 253, 243, 1);
+          font-size: 14px;
+          color: rgba(2, 122, 72, 1);
+          border-radius: 16px;
+        }
+      }
+    }
+    .updateFileAndCreateAcc {
+      display: flex;
+
+      .active-none:active {
+        border-color: rgba(0, 0, 0, 0.88) !important;
+        color: rgba(0, 0, 0, 0.88) !important;
+      }
+    }
+    .flex {
+      display: flex;
+    }
+  }
+
+  .tableAccounts-t {
+    margin-top: 30px;
+  }
+}

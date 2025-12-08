@@ -1,0 +1,377 @@
+.student-detail-page {
+  .header-info {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .left-info {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      .infomation {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .title-name {
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        .information-grid {
+          display: grid;
+          grid-template-columns: repeat(11, max-content);
+          align-items: center;
+          .partition {
+            width: 1px;
+            height: 70%;
+            background-color: #e2e2e2;
+          }
+          .info-item {
+            padding: 0 16px;
+
+            &:last-child {
+              border-right: none;
+            }
+            &:first-child {
+              padding-left: 0;
+            }
+
+            .title {
+            }
+
+            .value {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    .right-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  .student-detail-overview {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 24px;
+    height: 100%;
+
+    .data-table {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+
+      .item-data-table {
+        display: flex;
+        flex-direction: column;
+        max-height: 100%;
+        gap: 8px;
+        align-items: start;
+        padding: 16px;
+        border-radius: 6px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        .title-item-data {
+          font-size: 18px;
+        }
+
+        .number-item-data {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+
+          .number-data {
+            font-size: 24px;
+            font-weight: 700;
+          }
+
+          .icon-data {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #caf1ff;
+          }
+        }
+      }
+      .item-data-table:last-child {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-end: 1;
+        grid-column-start: 4;
+
+        .info-class {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+      .item-data-table:nth-child(6) {
+        .icon-data {
+          background-color: #ffc8c9;
+        }
+      }
+      .item-data-table:nth-child(2) {
+        .icon-data {
+          background-color: #d6ffc8;
+        }
+      }
+      .item-data-table:nth-child(3) {
+        .icon-data {
+          background-color: #c8c9ff;
+        }
+      }
+      .item-data-table:nth-child(4) {
+        .icon-data {
+          background-color: #fbffc8;
+        }
+      }
+      .item-data-table:nth-child(5) {
+        .icon-data {
+          background-color: #ffc8ee;
+        }
+      }
+    }
+
+    .student-checkin {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      padding: 16px;
+      border-radius: 6px;
+
+      // rank
+      .ranking {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 6px;
+        position: relative;
+        overflow: hidden;
+        height: 66px;
+        margin-bottom: 16px;
+
+        .background-rank {
+          position: absolute;
+          z-index: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 0;
+        }
+
+        .rank-info {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 16px;
+
+          .top-rank {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            width: 30px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #fff;
+            border-radius: 50%;
+            margin-right: 20px;
+          }
+
+          .rank-fullname {
+            z-index: 10;
+            font-size: 17px;
+            color: #fff;
+          }
+        }
+
+        .rank-star {
+          display: flex;
+          background-color: rgba(0, 0, 0, 0.4);
+          padding: 6px;
+          border-radius: 10px;
+          align-items: center;
+          gap: 10px;
+          margin-right: 16px;
+          z-index: 10;
+
+          .number-star {
+            color: #ffffff;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .title-list-recent {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .list-recent {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+        max-height: 300px;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        .item-recent {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px 16px;
+          margin: 4px;
+          gap: 10px;
+          border-radius: 6px;
+          width: calc(100% - 8px);
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+          .rank-star {
+            display: flex;
+            background-color: rgba(244, 182, 74, 0.2);
+            padding: 6px;
+            border-radius: 10px;
+            align-items: center;
+            gap: 10px;
+            margin-right: 16px;
+            z-index: 10;
+
+            .number-star {
+              font-weight: 700;
+            }
+          }
+        }
+
+        .load-more {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+        }
+      }
+
+      // điểm danh
+      .attendance-calendar {
+        .cell {
+          min-height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .attended {
+          background-color: #e6f7ff;
+          border-radius: 4px;
+          padding: 2px 4px;
+          color: #1890ff;
+          font-weight: 500;
+        }
+      }
+
+      .progress-col {
+        .progress-row {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-bottom: 8px;
+
+          .progress-label {
+            min-width: 130px;
+            font-weight: 500;
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+}
+
+.table-course-student {
+  .span-title {
+    color: rgba(16, 24, 40, 1);
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .table-course-of-student {
+    margin-top: 20px;
+    .course-detail {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      .detail-item {
+        display: flex;
+        align-items: start;
+
+        .label {
+          font-weight: 500;
+          min-width: 120px;
+          color: #555;
+        }
+
+        .value {
+          font-weight: 400;
+          color: #111;
+        }
+      }
+    }
+
+    .list-working-date {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      .title-sesson {
+        padding: 5px 10px;
+        border-radius: 6px;
+        min-width: 100px;
+        text-align: center;
+      }
+
+      .title-sesson-done {
+        background-color: #eefff1;
+        border: 1px solid #1db130;
+      }
+      .title-sesson-todo {
+        background-color: #eef6ff;
+        border: 1px solid #1d1fb1;
+      }
+      .title-sesson-late {
+        background-color: #ffeeee;
+        border: 1px solid #b12c1d;
+      }
+
+      .list-date {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+.table-score {
+  .header-table {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title-stable-score {
+      font-size: 18px;
+    }
+  }
+}

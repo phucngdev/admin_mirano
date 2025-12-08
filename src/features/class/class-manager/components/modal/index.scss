@@ -1,0 +1,43 @@
+.custom-datepicker {
+  width: 100%;
+  padding: 8px 12px !important;
+}
+
+.begin-tour {
+  .item-calender {
+    width: 90px;
+    height: 55px;
+    color: #b1b1b1;
+    flex-shrink: 0;
+    cursor: pointer;
+
+    .border-dashed-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      border: 1px dashed #b3b3b3;
+      border-radius: 6px;
+    }
+  }
+
+  .unselected-item {
+    background-color: #f9fafb;
+
+    &:hover {
+      background-color: #dcdcdc;
+    }
+  }
+
+  .selectd-item {
+    background-color: #c9e0ff;
+  }
+
+  .selected-item-scheduled {
+    background-color: #c45541;
+  }
+
+  .scheduled-item {
+    background-color: #4176c4;
+  }
+}

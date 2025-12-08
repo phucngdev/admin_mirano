@@ -1,0 +1,66 @@
+.information-modal {
+  p {
+    &:first-child {
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(52, 64, 84, 1);
+    }
+    &:last-child {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(102, 112, 133, 1);
+    }
+  }
+}
+
+.formCreateAcc {
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px 0px rgba(16, 24, 40, 0.06);
+  padding: 24px;
+  .ant-upload-drag-container {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    .ant-upload-drag-icon {
+      width: 40px;
+      height: 40px;
+      border: 6px solid rgba(249, 250, 251, 1);
+      background-color: rgba(242, 244, 247, 1);
+      border-radius: 28px;
+      margin-bottom: 0px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+:where(.css-dev-only-do-not-override-xex5fb).ant-modal .ant-modal-close {
+  top: 20px !important;
+}
+
+:where(.css-dev-only-do-not-override-xex5fb).ant-modal .ant-modal-close:hover {
+  background-color: transparent !important;
+}
+
+:where(.css-dev-only-do-not-override-xex5fb).ant-upload-wrapper
+  .ant-upload-drag:not(.ant-upload-disabled):hover {
+  border: 1px solid #d9d9d9;
+}
+
+:where(.css-dev-only-do-not-override-xex5fb).ant-upload-wrapper
+  .ant-upload-drag:not(.ant-upload-disabled) {
+  border: 1px solid #d9d9d9;
+  background-color: transparent;
+}
+
+.Form-acc {
+  margin-top: 15px;
+
+  .custom-input:hover,
+  .custom-input:focus {
+    box-shadow: 0 0 0 0px rgba(5, 145, 255, 0.1);
+    border-color: rgba(208, 213, 221, 1) !important;
+    outline: none !important;
+  }
+}

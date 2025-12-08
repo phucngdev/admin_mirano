@@ -1,0 +1,97 @@
+{
+  "department": {
+    "department": "Department",
+    "title": "Department Management",
+    "list": "Department List",
+    "totalOverdue": "Total Overdue:",
+    "newDepartment": "New Department",
+    "departmentsSelected": "departments selected",
+    "generalInformation": "General information",
+    "bookingHistory": "Booking Information",
+    "totalBooking": "Total Booking",
+    "search": "Search by employee ID or name",
+    "table": {
+      "departmentId": "Department ID",
+      "department": "Department",
+      "description": "Description",
+      "employee": "Employee",
+      "totalAmount": "Total Amount",
+      "paid": "Paid",
+      "unpaid": "Unpaid",
+      "status": "Status",
+      "lastMonthSpending": "Last Month Spending"
+    },
+    "create": {
+      "title": "Create new department",
+      "departmentName": {
+        "title": "Department name",
+        "placeholder": "Enter department name"
+      },
+      "departmentGroup": {
+        "button": "Add group",
+        "placeholder": "Enter group"
+      },
+      "employeePosition": {
+        "button": "Add group",
+        "placeholder": "Enter group"
+      },
+      "description": {
+        "title": "Description",
+        "placeholder": "Enter description"
+      },
+      "code": {
+        "title": "Code",
+        "placeholder": "Select code"
+      },
+      "notification": {
+        "description": "The department has been created successfully.",
+        "message": "Create Department"
+      }
+    },
+    "update": {
+      "title": "Edit department",
+      "notification": {
+        "description": "The department has been updated successfully.",
+        "message": "Update Department"
+      }
+    },
+    "delete": {
+      "button": "Delete",
+      "title": "Delete department",
+      "desc": "Are you sure to delete this department? </br> <span style='color: #ff9500; font-style: italic'>All things are related to the department has been removed including all employees, bookings of the department.</span>",
+      "notification": {
+        "description": "The department has been deleted successfully.",
+        "message": "Delete department"
+      }
+    },
+    "updateStatus": {
+      "notification": {
+        "description": "The status has been updated successfully.",
+        "message": "Update department"
+      }
+    },
+    "detail": {
+      "title": "Department Detail",
+      "info": "Department information",
+      "generalInformation": "General information",
+      "description": "Description",
+      "employee": "Employee",
+      "totalAmount": "Total Amount",
+      "codeAndPin": "Code | PIN",
+      "department": "Department",
+      "group": "Group",
+      "bookings": {
+        "search": "Search by booking ID or employee name"
+      },
+      "employees": {
+        "search": "Search by employee ID or employee name"
+      }
+    },
+    "bookingDetail": {
+      "title": "Booking Detail",
+      "search": "Search by employee name"
+    },
+    "bookings": "Bookings",
+    "employees": "Employees"
+  }
+}

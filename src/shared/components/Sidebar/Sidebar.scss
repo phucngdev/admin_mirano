@@ -1,0 +1,163 @@
+.flex {
+  display: flex;
+}
+
+.justify-beetwen {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.no-outline {
+  padding: 10px 14px;
+  border-radius: 8px;
+
+  &:focus-within {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #e2e8f0 !important;
+  }
+
+  &:hover {
+    border-color: #e2e8f0 !important;
+  }
+
+  .ant-input-prefix {
+    margin-inline-end: 10px;
+  }
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  max-height: 100vh; // Prevent the sidebar from growing too tall
+}
+
+.footer-logout {
+  height: 60px;
+  bottom: 0;
+  width: 250px;
+  padding: 16px;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  align-items: center;
+}
+
+/* Đặt overflow-x thành hidden và overflow-y thành auto để thanh cuộn chỉ hiện khi cần */
+.menu-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  /* Thanh cuộn chỉ hiện khi cần thiết */
+  height: calc(100vh - 96px);
+  /* Đảm bảo chiều cao cho menu */
+}
+
+/* Tùy chỉnh thanh cuộn */
+.menu-container::-webkit-scrollbar {
+  width: 2px;
+  opacity: 0;
+  /* Ẩn thanh cuộn */
+  transition: opacity 0.3s ease;
+  /* Thêm hiệu ứng chuyển tiếp */
+}
+
+/* Khi người dùng cuộn, thanh cuộn sẽ hiện ra */
+.menu-container:hover::-webkit-scrollbar {
+  opacity: 1;
+  /* Hiển thị thanh cuộn khi hover */
+}
+
+/* Tùy chỉnh phần track (nền thanh cuộn) */
+.menu-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Tùy chỉnh phần thumb (con lăn thanh cuộn) */
+.menu-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Khi hover vào phần thumb */
+.menu-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.ant-layout-sider .ant-menu .ant-menu-sub {
+  background-color: #f1f8ff !important;
+}
+.ant-layout-sider {
+  background: #fff !important;
+  // background: #f8fafc !important;
+  border-right: 1px solid #e2e8f0;
+  .ant-menu {
+    background: transparent;
+    border-right: none;
+
+    .ant-menu-item {
+      color: #475569;
+      margin: 4px 8px !important;
+      border-radius: 6px;
+
+      &:hover {
+        color: #3b82f6;
+        background: #eff6ff;
+      }
+
+      &.ant-menu-item-selected {
+        background: #eff6ff;
+        color: #3b82f6;
+      }
+
+      .anticon {
+        color: #64748b;
+      }
+
+      &:hover .anticon,
+      &.ant-menu-item-selected .anticon {
+        color: #3b82f6;
+      }
+    }
+
+    .ant-menu-submenu {
+      .ant-menu-submenu-title {
+        color: #475569;
+        margin: 4px 8px !important;
+        border-radius: 6px;
+
+        &:hover {
+          color: #3b82f6;
+          background: #eff6ff;
+        }
+
+        .anticon {
+          color: #64748b;
+        }
+      }
+
+      &.ant-menu-submenu-open,
+      &.ant-menu-submenu-selected {
+        .ant-menu-submenu-title {
+          color: #3b82f6;
+
+          .anticon {
+            color: #3b82f6;
+          }
+        }
+      }
+
+      .ant-menu-sub {
+        background: #f1f5f9;
+      }
+    }
+  }
+}

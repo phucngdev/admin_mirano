@@ -1,0 +1,88 @@
+{
+  "employee": {
+    "title": "Employee Management",
+    "newEmployee": "New Employee",
+    "employeeList": "Employee List",
+    "generalInformation": "General information",
+    "detail": {
+      "title": "Employee Detail",
+      "employee": "Employee"
+    },
+    "table": {
+      "employeeId": "Employee ID",
+      "name": "Employee Name",
+      "email": "Email",
+      "lastMonthAmount": "Last Month Amount",
+      "department": " Department",
+      "departmentGroup": "Group",
+      "position": "Employee Position",
+      "status": "Status",
+      "entrySource": "Entry Source"
+    },
+    "create": {
+      "title": "Create new employee",
+      "add": "New Employee",
+      "fullName": {
+        "title": "Full name",
+        "placeholder": "Enter full name"
+      },
+      "email": {
+        "title": "Email",
+        "placeholder": "Enter email"
+      },
+      "phoneNumber": {
+        "title": "Phone number",
+        "placeholder": "Enter phone number"
+      },
+      "address": {
+        "title": "Address",
+        "placeholder": "Enter address"
+      },
+      "departmentGroup": {
+        "title": "Department group",
+        "placeholder": "Select department group"
+      },
+      "department": {
+        "title": "Department",
+        "placeholder": "Select department"
+      },
+      "role": {
+        "title": "Employee position",
+        "placeholder": "Select employee position"
+      },
+      "code": {
+        "title": "Code",
+        "placeholder": "Select code"
+      },
+      "notification": {
+        "description": "The employee has been created successfully.",
+        "message": "Create employee"
+      }
+    },
+    "delete": {
+      "title": "Delete employee",
+      "desc": "Are you sure to delete this employee?",
+      "notification": {
+        "description": "The employee has been deleted successfully.",
+        "message": "Delete employee"
+      }
+    },
+    "update": {
+      "title": "Edit employee",
+      "notification": {
+        "description": "The employee has been updated successfully.",
+        "message": "Update employee"
+      }
+    },
+    "updateStatus": {
+      "notification": {
+        "description": "The status has been updated successfully.",
+        "message": "Update employee"
+      }
+    },
+    "entrySource": {
+      "mobileApp": "Mobile App",
+      "businessAdmin": "Business Admin"
+    }
+  }
+}

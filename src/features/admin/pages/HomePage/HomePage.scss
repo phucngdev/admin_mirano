@@ -1,0 +1,21 @@
+.container-t {
+    width: 215px;
+    .accAndRoles {
+        padding: 8px 12px;
+        border-radius: 6px;
+        background-color: white;
+        margin-bottom: 5px;
+        span {
+            font-size: 16px;
+            color: rgba(52, 64, 84, 1);
+        }
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .align-center {
+        align-items: center;
+    }
+}

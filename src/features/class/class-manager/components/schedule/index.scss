@@ -1,0 +1,168 @@
+.schedule-manager {
+  margin-bottom: 40px;
+  margin-top: 20px;
+  position: relative;
+
+  .span-title {
+    color: rgba(16, 24, 40, 1);
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .table-wrapper {
+    position: relative;
+    margin-top: 16px;
+    overflow: hidden;
+  }
+
+  .table-header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 20;
+    border-bottom: 1px solid #ccc;
+
+    .header-fixed {
+      display: flex;
+      width: 500px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+
+      .title-table {
+        width: 250px;
+        padding: 8px;
+        background-color: #eff2ff;
+        font-weight: 700;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: left;
+        border-bottom: 1px solid #ccc;
+      }
+
+      // .title-table:last-child {
+      //   width: 250px;
+      // }
+    }
+
+    .header-scroll {
+      display: flex;
+      overflow-x: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #bbb transparent;
+
+      &::-webkit-scrollbar {
+        height: 6px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #bbb;
+        border-radius: 3px;
+      }
+    }
+
+    .title-table-date {
+      width: 90px;
+      padding: 8px;
+      background-color: #eff2ff;
+      font-weight: 700;
+      text-align: center;
+      flex-shrink: 0;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+
+  .table-body {
+    overflow-y: auto;
+    max-height: calc(100vh - 320px);
+    .row {
+      display: flex;
+      position: relative;
+      border-bottom: 1px solid #eee;
+
+      .title-row-fixed {
+        display: flex;
+        width: 500;
+        position: sticky;
+        left: 0;
+        background-color: white;
+        z-index: 10;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+
+        .title-row {
+          width: 250px;
+          padding: 8px;
+          border-bottom: 1px solid #eee;
+          flex-shrink: 0;
+          align-items: center;
+          display: flex;
+          justify-content: left;
+        }
+        // .title-row:last-child {
+        //   width: 250px;
+        // }
+      }
+
+      .list-date-select {
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        flex-grow: 1;
+        &::-webkit-scrollbar {
+          display: none; // Chrome, Safari
+        }
+
+        .item-calender {
+          width: 90px;
+          height: 55px;
+          padding: 5px;
+          color: #b1b1b1;
+          flex-shrink: 0;
+          cursor: pointer;
+
+          .border-dashed-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            border: 1px dashed #b3b3b3;
+            border-radius: 6px;
+          }
+        }
+
+        .unselected-item {
+          background-color: #f9fafb;
+
+          &:hover {
+            background-color: #dcdcdc;
+          }
+        }
+
+        .selectd-item {
+          background-color: #c9e0ff;
+        }
+
+        .selected-item-scheduled {
+          background-color: #c45541;
+        }
+
+        .scheduled-item {
+          // background-color: #4176c4;
+          background-color: #1677ff;
+        }
+      }
+    }
+  }
+}
+
+.schedule-manager-v2 {
+  // .custom-date-picker .ant-select-selector {
+  //   white-space: normal !important;
+  //   height: auto !important;
+  //   min-height: 40px;
+  //   padding-bottom: 4px;
+  // }
+
+  // .custom-date-picker .ant-select-selection-overflow {
+  //   flex-wrap: wrap !important;
+  // }
+}

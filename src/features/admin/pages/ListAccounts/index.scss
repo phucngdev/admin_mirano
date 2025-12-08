@@ -1,0 +1,28 @@
+.Container-t-listAndTable {
+    .listAccountsIpfileAndCreatAcc {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .listAccounts-t {
+          
+            span {
+                color: rgba(16, 24, 40, 1);
+                font-size: 30px;
+                font-weight: 500;
+            }
+        }
+        .updateFileAndCreateAcc {
+            display: flex;
+
+            .active-none:active {
+                border-color:  rgba(0,0,0,0.88) !important;
+                color: rgba(0,0,0,0.88) !important;
+            }
+        }
+    }
+
+    .tableAccounts-t {
+        margin-top: 30px;
+    }
+}

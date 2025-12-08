@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '#1 🏗️👷 Running integration tests'
+pnpm test:integrations
+
+echo '#2 ✅  Finished integration tests, ready to push...' 

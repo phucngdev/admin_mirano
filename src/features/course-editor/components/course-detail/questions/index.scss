@@ -1,0 +1,71 @@
+.question-set {
+  width: 100%;
+  overflow-y: scroll;
+  .form-new-question {
+    // display: flex;
+
+    .head-form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 0 10px 0;
+
+      .title-form {
+        font-size: 20px;
+      }
+
+      .right-head-form {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+
+    .content-form {
+      display: flex;
+      align-items: start;
+      gap: 24px;
+
+      .left-form {
+        flex: 1;
+      }
+
+      .right-form {
+        flex: 2;
+      }
+    }
+  }
+
+  .question-table-container {
+    .head-table {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 0 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 99;
+      background-color: #f8f8f8;
+
+      h3 {
+        font-size: 20px;
+      }
+      .right-head-table {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        .input-search {
+          width: 400px;
+          padding: 4px 12px !important;
+          height: unset !important;
+        }
+      }
+    }
+    td.ant-table-cell {
+      vertical-align: middle; /* Căn giữa dọc */
+    }
+
+    .question-table {
+    }
+  }
+}

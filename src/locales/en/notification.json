@@ -1,0 +1,14 @@
+{
+  "notification": {
+    "title": "Notifications",
+
+    "search": {
+      "notificationType": "Notifications"
+    },
+    "table": {
+      "notificationType": "Notification Type",
+      "notification": "Notification",
+      "date": "Date"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "role": {
+    "create": {
+      "notification": {
+        "description": "The position has been created successfully.",
+        "message": "Create position"
+      }
+    },
+    "edit": {
+      "title": "Edit position",
+      "notification": {
+        "description": "The position has been updated successfully.",
+        "message": "Edit position"
+      },
+      "positionName": {
+        "title": "Position Name",
+        "placeholder": "Enter position name"
+      }
+    },
+    "delete": {
+      "title": "Delete Position",
+      "desc": "Are you sure you want to delete this Position?",
+      "notification": {
+        "description": "The position has been deleted successfully.",
+        "message": "Delete position"
+      }
+    }
+  }
+}

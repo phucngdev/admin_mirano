@@ -1,0 +1,99 @@
+.editor-container_classic-editor {
+  .editor-container__editor {
+    // width: 100%;
+  }
+}
+
+.readonly-ck-custom {
+  position: relative;
+  .opacity-readonly {
+    position: absolute;
+    inset: 0;
+    z-index: 99;
+  }
+
+  .ck-content {
+    //   min-height: 200px;
+    height: fit-content !important;
+    ul {
+      li {
+        line-height: 24px;
+      }
+    }
+
+    blockquote {
+      background-color: #f0f0f0;
+      border-radius: 4px;
+    }
+
+    .image {
+      img {
+        border: 1px solid #dadada;
+        border-radius: 6px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.ck {
+  table {
+    tr {
+      border: 1px solid #dadada;
+
+      td {
+        height: 40px;
+        padding: 0 16px !important;
+      }
+
+      &:first-child {
+        height: 44px;
+        background-color: #f0f0f0;
+        // font-weight: 600;
+      }
+    }
+  }
+  .ck-toolbar__items {
+    flex-wrap: wrap !important;
+  }
+}
+
+.ck-powered-by-balloon {
+  display: none !important;
+}
+
+.ck strong {
+  font-weight: 700 !important;
+}
+
+.ck u {
+  text-decoration: underline !important;
+}
+
+.ck-content i,
+.ck-content em {
+  font-style: italic !important;
+}
+
+.ck .ck-sticky-panel__content {
+  border: none !important;
+}
+
+.ck.ck-toolbar,
+.ck.ck-editor__main > .ck-editor__editable:not(.ck-focused) {
+  border: 1px solid #d9d9d9 !important;
+}
+
+.ck.ck-toolbar {
+  border-radius: 8px 8px 0 0 !important;
+}
+
+// .ck.ck-editor__main > .ck-editor__editable {
+//   border-radius: 0 0 20px 20px !important;
+// }
+
+.ck-editor__main .ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable,
+.ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners {
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}

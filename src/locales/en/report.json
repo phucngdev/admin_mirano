@@ -1,0 +1,19 @@
+{
+  "report": {
+    "title": "Report",
+    "totalBooking": "Total Booking",
+    "totalExpense": "Total Expense",
+
+    "bookings&Expense": {
+      "title": "Bookings & Expense",
+
+      "search": "Search",
+      "table": {
+        "employeeId": "Employee ID",
+        "name": "Name",
+        "bookings": "Bookings",
+        "expenses": "Expenses"
+      }
+    }
+  }
+}

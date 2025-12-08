@@ -1,0 +1,12 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "booking": "Booking",
+    "metricCard": {
+      "totalBooking": "Total Booking",
+      "totalEmployee": "Total Employee",
+      "totalPayment": "Total Payment",
+      "totalPaymentOverdue": "Total Payment Overdue"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '(1/4) 🏗️👷 Styling, testing and building your project before committing'
+pnpm check-types
+
+echo '(2/4) ✅  Linting your project'
+pnpm lint-staged
+
+echo '(3/4) ✅ Running unit tests'
+pnpm test:units
+
+echo '(4/4) ✅ Finished linting your project, checking commit message with conventional commit'

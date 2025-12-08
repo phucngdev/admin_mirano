@@ -1,0 +1,10 @@
+.modal-create-update-question-tab {
+  .ant-select-single {
+    height: unset !important;
+  }
+  .custom-select {
+    .ant-select-selector {
+      padding: 4px 12px !important;
+    }
+  }
+}

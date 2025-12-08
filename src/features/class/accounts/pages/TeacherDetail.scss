@@ -1,0 +1,71 @@
+.teacher-detail-page {
+  height: calc(100vh - 80px - 35px);
+  overflow: hidden;
+
+  .content-profile {
+    display: flex;
+    align-items: start;
+    gap: 16px;
+    height: 100%;
+
+    .teacher-left-profile {
+      width: 25%;
+      max-height: calc(100vh - 200px);
+      .teacher-profile {
+        .teacher-name {
+          font-size: 17px;
+          margin-top: 10px;
+          margin-bottom: 5px;
+        }
+        .teacher-usercode {
+          font-size: 14px;
+          font-weight: 600;
+          color: #1677ff;
+          margin-bottom: 12px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+          border: none;
+          background-color: transparent;
+        }
+      }
+
+      .teacher-contact {
+        .title-contact {
+          font-size: 18px;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .contact-item {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          gap: 6px;
+          margin-top: 25px;
+
+          .title-contact-item {
+          }
+          .contact-item-detail {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+      }
+    }
+
+    .teacher-mission {
+      flex: 1;
+
+      .title-table-class {
+        margin-bottom: 16px;
+        font-size: 17px;
+        font-weight: 700;
+      }
+    }
+  }
+}

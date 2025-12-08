@@ -1,0 +1,62 @@
+{
+  "bookingHistory": {
+    "title": "Booking History",
+    "businessBookings": "Business Bookings",
+    "individualBookings": "Individual Bookings",
+    "onlyIncludesCompletedBookings": "Only includes completed bookings",
+    "booking": "Booking",
+    "table": {
+      "bookingId": "Booking ID",
+      "employeeName": "Employee Name",
+      "name": "Name",
+      "service": "Service",
+      "totalAmount": "Total Amount",
+      "distance": "Distance",
+      "bookingDate&Time": "Booking Date&Time",
+      "cancelledAfter5Mins": "Cancelled after 5 mins",
+      "bookingStatus": "Booking Status",
+      "filter": {
+        "search": "Search by booking ID or customer name",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "department": "Department"
+      }
+    },
+    "detail": {
+      "title": "Booking Detail",
+      "customerInformation": "Customer Information",
+      "generalInformation": {
+        "title": "General information",
+        "email": "Email",
+        "phoneNumber": "Phone number",
+        "address": "Address",
+        "codeNameAndPin": "Code name | PIN"
+      },
+      "departmentInformation": {
+        "title": "Department information",
+        "business": "Business",
+        "department": "Department",
+        "group": "Group",
+        "role": "Role"
+      },
+      "driverInformation": {
+        "title": "Driver Information"
+      },
+      "bookingInformation": {
+        "title": "Booking Information",
+        "service": "Service",
+        "dateTime": "Date & Time",
+        "from": "From",
+        "to": "To",
+        "price": "Price",
+        "discount": "Discount",
+        "federalTax": "Federal Tax",
+        "provincialTax": "Provincial Tax",
+        "amount": "Amount",
+        "cancelReason": "Cancel Reason",
+        "mappingRoute": "Mapping Route",
+        "viewOnTheMap": "View on the map"
+      }
+    }
+  }
+}

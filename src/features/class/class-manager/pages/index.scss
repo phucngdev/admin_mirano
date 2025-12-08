@@ -1,0 +1,379 @@
+.class-detail-page {
+  height: calc(100vh - 80px - 35px);
+  overflow: hidden;
+
+  .header-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .group-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none; // Chrome, Safari
+  }
+  .content-class-detail {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 24px;
+
+    .content-left-class-detail {
+      width: 20%;
+
+      .sidebar-class-detail {
+        max-height: calc(100vh - 200px);
+        overflow-y: auto;
+        padding-right: 4px;
+        scrollbar-color: #bbb transparent;
+
+        .span-title {
+          color: rgba(16, 24, 40, 1);
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        .list-teacher {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 10px;
+          margin-top: 16px;
+          margin-bottom: 30px;
+
+          .teacher-item {
+            border: 1px solid #002fff;
+            width: 100%;
+            padding: 0 10px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            height: 44px;
+            justify-content: space-between;
+
+            &:hover {
+              .btn-delete-teacher {
+                display: block;
+              }
+            }
+
+            .btn-delete-teacher {
+              padding: 4px;
+              border: 1px solid red;
+              border-radius: 6px;
+              background-color: transparent;
+              cursor: pointer;
+              display: none;
+
+              &:hover {
+                background-color: #ffe5da;
+              }
+              &:active {
+                background-color: #ffd9c9;
+              }
+            }
+          }
+        }
+        .list-course {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 10px;
+          margin-top: 16px;
+          margin-bottom: 30px;
+
+          .course-item {
+            border: 1px solid #002fff;
+            width: 100%;
+            padding: 0 10px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            height: 44px;
+            justify-content: space-between;
+
+            &:hover {
+              .btn-delete-course {
+                display: block;
+              }
+            }
+
+            .btn-delete-course {
+              padding: 4px;
+              border: 1px solid red;
+              border-radius: 6px;
+              background-color: transparent;
+              cursor: pointer;
+              display: none;
+
+              &:hover {
+                background-color: #ffe5da;
+              }
+              &:active {
+                background-color: #ffd9c9;
+              }
+            }
+          }
+        }
+
+        .list-department {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 10px;
+          margin-top: 16px;
+
+          .department-item {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 10px;
+            width: 100%;
+            padding: 10px;
+            border: 1px dashed #1677fe;
+            border-radius: 6px;
+
+            .list-course-check {
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+              gap: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .content-right-class-detail {
+      flex: 1;
+      overflow: auto;
+      max-height: calc(100vh - 220px);
+      .overview-class {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-bottom: 20px;
+
+        .overview-item {
+          padding: 16px;
+          border-radius: 6px;
+          margin: 4px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          display: flex;
+          flex-direction: column;
+          .span-title-item {
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          .span-sub-title-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          }
+
+          .progress-percent {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        .overview-item:nth-child(2),
+        .overview-item:nth-child(3) {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+
+          .row-overview-percent {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .row-title {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              .icon-row {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.class-manager-page {
+  .header-class-manager-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .span-title {
+      color: rgba(16, 24, 40, 1);
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .group-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  .table-class-manager {
+    margin-top: 24px;
+
+    .span-table {
+      color: rgba(16, 24, 40, 1);
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .span-table:hover {
+      color: #1890ff;
+    }
+  }
+}
+
+.setup-schedule-page {
+  height: calc(100vh - 80px - 35px);
+  overflow: hidden;
+
+  .header-class-manager-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .span-title {
+      color: rgba(16, 24, 40, 1);
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .group-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+}
+
+.attendances-page {
+  .header-class-manager-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .group-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  .layout-table {
+    display: flex;
+    align-items: start;
+    margin-top: 20px;
+    gap: 20px;
+
+    .table-list-student {
+      flex: 1;
+
+      .span-title {
+        color: rgba(16, 24, 40, 1);
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 20px;
+
+        .number-total {
+          padding: 3px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #1677ff;
+          color: white;
+          aspect-ratio: 1;
+          height: 20px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .table-absent {
+      width: 40%;
+
+      .span-title {
+        color: rgba(16, 24, 40, 1);
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 20px;
+
+        .number-total {
+          padding: 3px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #dff2ff;
+          border: 1px solid #002fff;
+          aspect-ratio: 1;
+          height: 30px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.exam-result-page {
+  .header-class-manager-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .span-title {
+      color: rgba(16, 24, 40, 1);
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .group-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  .span-title {
+    color: rgba(16, 24, 40, 1);
+    font-size: 20px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,31 @@
+.custom-otp-input {
+  & > div {
+    gap: 0.5rem;
+  }
+  input {
+    font-size: 1.5rem;
+    color: #1e2328;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid #bab6be;
+    width: 58px !important;
+    height: 58px;
+    outline: var(--primary-color);
+    @media screen and (max-width: 1024px) {
+      width: 52px !important;
+      height: 52px;
+    }
+    @media screen and (max-width: 768px) {
+      width: 48px !important;
+      height: 48px;
+    }
+    @media screen and (max-width: 425px) {
+      width: 32px !important;
+      height: 32px;
+    }
+
+    &:hover {
+      border: 1px solid var(--primary-color);
+      @apply ring-1 ring-primary-color;
+    }
+  }
+}

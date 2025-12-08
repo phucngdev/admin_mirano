@@ -1,0 +1,45 @@
+.ant-form-item-label {
+  label {
+    height: unset !important;
+    @apply text-base font-semibold;
+  }
+}
+
+.ant-divider-horizontal {
+  @apply my-4;
+}
+
+.ant-btn {
+  @apply font-semibold;
+}
+
+.ant-tooltip .ant-tooltip-arrow::before {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 660px) {
+  .ant-picker-panels {
+    display: grid !important;
+  }
+}
+
+.sidebar {
+  height: 100vh;
+  margin-right: 24px;
+}
+
+.ant-card-body {
+  @media screen and (max-width: 576px) {
+    padding: 12px !important;
+  }
+}
+
+// .ant-drawer-content-wrapper {
+//   width: 100% !important;
+// }
+
+.ant-tabs-extra-content {
+  @media screen and (max-width: 375px) {
+    flex: auto !important;
+  }
+}

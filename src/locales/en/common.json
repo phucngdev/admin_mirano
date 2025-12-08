@@ -1,0 +1,57 @@
+{
+  "common": {
+    "validate": {
+      "email": {
+        "invalid": "Invalid email",
+        "required": "Email is required"
+      },
+      "url": {
+        "invalid": "Invalid url",
+        "required": "Url is required"
+      },
+      "password": {
+        "invalid": "Invalid password",
+        "required": "Password is required"
+      },
+      "requiredField": "This is required field",
+      "mustContainDigitsOnly": "Field must contain digits only",
+      "maxLength": "Max length is {{length}}",
+      "requiredLength": "Required length is {{length}}"
+    },
+    "logout": "Logout",
+    "button": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "view": "View",
+      "pay": "Pay",
+      "cancel": "Cancel",
+      "create": "Create",
+      "export": "Export",
+      "confirm": "Confirm",
+      "update": "Update",
+      "reset": "Reset",
+      "saveChanges": "Save Changes",
+      "next": "Next",
+      "save": "Save",
+      "clearFilter": "Clear Filter",
+      "back": "Back"
+    },
+    "table": {
+      "result": "Result"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "expired": "Expired"
+    },
+    "time": {
+      "today": "Today",
+      "thisWeek": "This Week",
+      "thisMonth": "This Month"
+    },
+    "error": {
+      "opp": "Oops!"
+    },
+    "success": "Success"
+  }
+}

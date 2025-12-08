@@ -1,0 +1,114 @@
+{
+  "code": {
+    "title": "Code Management",
+    "newCode": "New Code",
+    "generalInformation": {
+      "title": "General information"
+    },
+    "search": {
+      "codeName": "Search by code name"
+    },
+    "table": {
+      "code": "Code",
+      "Department": "Department",
+      "lastChanged": "Last Changed",
+      "lastUsed": "Last Used",
+      "status": "Status"
+    },
+    "create": {
+      "title": "Create new code",
+      "generalInformation": "General information",
+      "pinSetup": "PIN Setup",
+      "codeName": {
+        "title": "Code name",
+        "placeholder": "Enter code name",
+        "required": "Code name is required"
+      },
+      "department": {
+        "title": "Department",
+        "placeholder": "Select department"
+      },
+      "employee": {
+        "title": "Employee",
+        "placeholder": "Select employee"
+      },
+      "spendingLimit": {
+        "title": "Max spending limit($CAD)",
+        "placeholder": "Enter spending limit",
+        "required": "Max spending limit is required"
+      },
+      "maxNumberOfUse": {
+        "title": "Max number of usage",
+        "placeholder": "Enter max number of usage",
+        "required": "Max number of usage is required"
+      },
+      "distanceLimit": {
+        "title": "Distance limit(km)",
+        "placeholder": "Enter distance limit",
+        "required": "Distance limit is required"
+      },
+      "expiredDate": {
+        "title": "Expired date",
+        "placeholder": "Enter expired date",
+        "required": "Expired date is required"
+      },
+      "pin": {
+        "title": "PIN",
+        "placeholder": "Enter PIN",
+        "required": "PIN needs to be generated"
+      },
+      "repeat": {
+        "title": "Repeat",
+        "placeholder": "No repeat",
+        "noRepeat": "No repeat",
+        "weekly": "Weekly",
+        "monthly": "Monthly"
+      },
+      "button": {
+        "generatePIN": "Generate PIN",
+        "generateNewPIN": "Generate new PIN"
+      },
+      "notification": {
+        "description": "The code has been created successfully.",
+        "message": "Create Code"
+      }
+    },
+    "edit": {
+      "title": "Edit code",
+      "notification": {
+        "description": "The code has been updated successfully.",
+        "message": "Update Code"
+      }
+    },
+    "delete": {
+      "title": "Delete Code",
+      "desc": "Are you sure to delete this code?",
+      "descAndWarning": "Are you sure to delete this code ?</br> <span style='font-style: italic;'>This CODE is associated to departments will also be deleted.</span>",
+      "notification": {
+        "description": "The code has been deleted successfully.",
+        "message": "Delete Code"
+      }
+    },
+    "detail": {
+      "title": "Code Detail",
+      "limitation": "Limitation",
+      "spendingLimit": "Spending limit",
+      "numberOfUsage": "Number of usage",
+      "distanceLimit": "Distance limit",
+      "repeat": "Repeat",
+      "usedHistory": {
+        "title": "Using history"
+      },
+      "employees": {
+        "title": "Employees",
+        "tooltip": "It represents who applied the code"
+      }
+    },
+    "updateStatus": {
+      "notification": {
+        "message": "Update code",
+        "description": "The status has been updated successfully."
+      }
+    }
+  }
+}

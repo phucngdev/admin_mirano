@@ -1,0 +1,26 @@
+.modal-create-topic {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  .row-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+
+    span {
+    }
+  }
+}
+
+.modal-create-update-vocabulary {
+  .row-modal-vocabulary {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+}

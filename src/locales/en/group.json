@@ -1,0 +1,29 @@
+{
+  "group": {
+    "create": {
+      "notification": {
+        "description": "The department group has been created successfully.",
+        "message": "Create department group"
+      }
+    },
+    "edit": {
+      "title": "Edit department group",
+      "notification": {
+        "description": "The department group has been updated successfully.",
+        "message": "Edit department group"
+      },
+      "groupName": {
+        "title": "Department group name",
+        "placeholder": "Enter department group name"
+      }
+    },
+    "delete": {
+      "title": "Delete Group",
+      "desc": "Are you sure to delete this group? <br/> <span class='italic'>Roles associated to this group will also be deleted.</span>",
+      "notification": {
+        "description": "The department group has been deleted successfully.",
+        "message": "Delete department group"
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./",
+    "paths": {
+      "#/api/*": ["src/api/*"],
+      "#/store/*": ["src/store/*"],
+      "#/services/*": ["src/services/*"],
+      "#/shared/*": ["src/shared/*"],
+      "#/features/*": ["src/features/*"],
+      "#/configs/*": ["src/configs/*"],
+      "#/routers/*": ["src/routers/*"],
+      "#/assets/*": ["src/assets/*"],
+      "#/src/*": ["./src/*"]
+    }
+  },
+  "include": ["./src", "./tests", "jest.config.ts", "jest.setup.ts", "src/features/setting/hooks/settingUser/.tsx"],
+  "exclude": ["node_modules", "**/*.spec.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

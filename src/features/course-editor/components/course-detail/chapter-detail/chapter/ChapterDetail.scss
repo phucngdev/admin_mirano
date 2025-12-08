@@ -1,0 +1,69 @@
+.chapter-header {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+
+  .chapter-title-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      margin: 0;
+    }
+
+    .btn-update {
+      background: #1677fe;
+      color: white;
+      border: none;
+      padding: 6px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  }
+
+  .chapter-form {
+    margin-top: 16px;
+    margin-bottom: 24px;
+
+    label {
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .desc {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 6px;
+    }
+
+    .chapter-input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+  }
+  .btn-delete {
+    margin-top: 40px;
+    padding: 10px;
+    background: none;
+    border: none;
+    color: #ff4d4e;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s ease;
+    border-radius: 6px;
+
+    &:hover {
+      color: #be123c;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+  }
+}

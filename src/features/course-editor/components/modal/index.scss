@@ -1,0 +1,60 @@
+.modal-select-question {
+  .ant-select-single {
+    height: unset !important;
+  }
+  .custom-select {
+    .ant-select-selector {
+      padding: 4px 12px !important;
+    }
+  }
+
+  .question-title {
+    color: #1890ff;
+    cursor: pointer;
+  }
+
+  .title-list-question {
+    margin-bottom: 8px;
+    .tag-cancel {
+      cursor: pointer;
+    }
+  }
+
+  td.ant-table-cell {
+    vertical-align: middle; /* Căn giữa dọc */
+  }
+}
+
+.modal-create-test-file {
+  .document-content {
+    margin-bottom: 60px;
+    margin-top: 24px;
+
+    p {
+      font-weight: 600;
+      font-size: 14px;
+      color: #111827;
+    }
+    .list-document {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 16px;
+
+      .document-item {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        justify-content: space-between;
+        padding: 8px 10px;
+        border-radius: 6px;
+        background: rgba(250, 250, 250, 1);
+        cursor: pointer;
+
+        &:hover {
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+      }
+    }
+  }
+}

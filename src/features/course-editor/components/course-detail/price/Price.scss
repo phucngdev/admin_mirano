@@ -1,0 +1,83 @@
+.price {
+  display: flex;
+  align-items: start;
+  gap: 24px;
+  width: 100%;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    h2 {
+      color: #4338ca;
+      font-size: 20px;
+    }
+    button {
+      border: none;
+      padding: 10px 16px;
+      background: #4338ca;
+      opacity: 70%;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  .content-price,
+  .content-sale {
+    padding: 12px 24px;
+    flex: 1;
+    background: white;
+    border-radius: 6px;
+
+    .switch-title {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .form-setup-price {
+      margin-bottom: 30px;
+      margin-bottom: 30px;
+
+      h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .form-limit-day {
+      margin-top: 30px;
+
+      .limit-day-input {
+        margin-top: 10px;
+      }
+    }
+
+    .form-setup-sale {
+      .setup-sale {
+        margin-top: 15px;
+
+        p {
+          font-size: 17px;
+        }
+        .row-setup {
+          display: flex;
+          flex-direction: column;
+          margin-top: 15px;
+          gap: 8px;
+
+          .ant-picker {
+            padding: 8px 12px;
+          }
+        }
+      }
+    }
+  }
+}
