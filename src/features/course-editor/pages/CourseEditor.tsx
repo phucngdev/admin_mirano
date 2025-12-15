@@ -258,7 +258,7 @@ const CourseEditor: React.FC = () => {
           <span className="header-icon">✖</span>
         </div>
         <span className="header-label">Khoá học</span>
-        <div className="header-title">Website khởi tạo từ RikaSoft</div>
+        <div className="header-title">Nguyễn Minh Phúc - 2121050560</div>
         <div className="header-right">
           <span
             className="header-preview"
