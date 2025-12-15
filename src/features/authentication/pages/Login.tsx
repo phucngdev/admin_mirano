@@ -10,6 +10,7 @@ import { expiresToken } from '#/shared/constants/expises';
 import Loading from '#/shared/components/loading/Loading';
 import bg_login from '#/assets/images/login/bg_login.png';
 import bg_login_2 from '#/assets/images/login/bg_login_2.png';
+import frame_auth from '#/assets/images/login/frame_auth.png';
 import { UpsertUserDto } from '#/api/requests';
 
 function Login() {
@@ -89,7 +90,7 @@ function Login() {
     <div className="loginPages-t">
       <div className="bg-left">
         <img src={bg_login} alt="" className="bg-z-1" />
-        <img src={bg_login_2} alt="" className="bg-2" />
+        <img src={frame_auth} alt="" className="bg-2" />
         <img alt="logo" className="logo-mankai" src={logo} />
         <div className="slogan-text">Kaiwa siêu tốc, phản xạ thần tốc</div>
       </div>

@@ -26,6 +26,7 @@ import { getTestCategory } from '#/src/redux/thunk/test-category.thunk';
 import { deleteTestCategoryService } from '#/api/services/testCategoryService';
 import { TestCategoryEntity } from '#/api/requests';
 import { fallback } from '#/shared/constants/fallback';
+import img_replace from '#/assets/images/header/logo_mirano.png';
 
 const TestPage = () => {
   const navigate = useNavigate();
@@ -98,7 +99,7 @@ const TestPage = () => {
       render: (imageUrl: string) => (
         <Image
           className="w-16 h-16 object-cover rounded"
-          src={imageUrl}
+          src={img_replace}
           fallback={fallback}
         />
       ),
